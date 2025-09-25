@@ -1,4 +1,4 @@
-
+import Testimonial from './components/Testimonial'
 import FAQAccordion from './components/FAQAccordion';
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
     <div className="app">
       
         <FAQAccordion />
+        <Testimonial />
   
     </div>
   );
