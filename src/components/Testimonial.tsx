@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import  { useState, useEffect, useCallback, useRef } from 'react';
 import { FaArrowLeft, FaArrowRight, FaQuoteLeft, FaStar } from 'react-icons/fa';
 
 interface Testimonial {
@@ -330,5 +330,6 @@ const TestimonialCarousel = () => {
     </section>
   );
 };
+
 
 export default TestimonialCarousel;
