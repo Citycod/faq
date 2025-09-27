@@ -65,8 +65,7 @@ const StarRating = ({ rating }: { rating: number }) => {
 const TestimonialCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const intervalRef = useRef<Timeout | null>(null);
-
+  const intervalRef = useRef<number | null>(null);
   // Simple auto-slide function
   const autoSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
@@ -333,4 +332,5 @@ const TestimonialCarousel = () => {
 
 
 export default TestimonialCarousel;
+
 
